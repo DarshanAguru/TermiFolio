@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: #f4f4f5;
+  --background-color: #030303;
+}
+
+body {
+  color: var(--foreground-color);
+  background: var(--background-color);
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(20, 184, 166, 0.08) 0%, transparent 40%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(3, 3, 3, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(63, 63, 70, 0.5);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.5);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.smart {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  .navBig {
+    display: none;
+  }
+
+  .navSmall {
+    display: flex;
+  }
+
+  .smart {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 299px) {
+  .navBig {
+    display: none;
+  }
+
+  .navSmall {
+    display: none;
+  }
+
+  .smart {
+    display: block;
+  }
+}

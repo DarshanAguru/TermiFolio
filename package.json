@@ -1,0 +1,45 @@
+{
+  "name": "termifolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@types/crypto-js": "^4.2.2",
+    "@vercel/analytics": "^1.3.1",
+    "@vercel/speed-insights": "^1.0.12",
+    "autoprefixer": "^10.4.21",
+    "crypto-js": "^4.2.0",
+    "eslint-config-next": "^13.5.7",
+    "grapheme-splitter": "^1.0.4",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.441.0",
+    "next": "^16.1.1",
+    "pdfjs-dist": "^4.5.136",
+    "termifolio": "file:",
+    "raw-loader": "^4.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-spinners": "^0.14.1",
+    "react-tilty": "^3.0.0",
+    "react-toastify": "^10.0.5",
+    "typewriter-effect": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  },
+  "browser": {
+    "crypto": false
+  }
+}
